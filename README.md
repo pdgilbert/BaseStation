@@ -8,7 +8,6 @@ for an overview of the larger project and several related repositories.
 
 ## Base Station Summary
 
-Code for the base station is in the subdirectory `BaseStation`.
 The program `SensorRecord` is `python3` code which runs on a base station. 
 It receives and records data from the sensor modules. 
 The current version simply listens on a LoRa channel and records any transmissions received.
