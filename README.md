@@ -1,3 +1,11 @@
+This repository has python code to record data transmittd by LoRa from
+modules with several sensors attached. It also describes a Raspberry Pi
+hardware and OS setup and configuration.
+
+See the [`SensorProject repo`](https://github.com/pdgilbert/SensorProject)
+for an overview of the larger project and several related repositories.
+
+
 ## Base Station Summary
 
 Code for the base station is in the subdirectory `BaseStation`.
