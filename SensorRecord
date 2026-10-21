@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 
 """
+This version is using package pySX127x.
 Listen for  LoRa messages from sensor modules and record to file.
 For debugging transmitters it can help to print to the screen too (.
 

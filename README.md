@@ -1,4 +1,4 @@
-This repository has python code to record data transmittd by LoRa from
+This repository has python code to record data transmitted by LoRa from
 modules with several sensors attached. It also describes a Raspberry Pi
 hardware and OS setup and configuration.
 
@@ -8,8 +8,15 @@ for an overview of the larger project and several related repositories.
 
 ## Base Station Summary
 
-The program `SensorRecord` is `python3` code which runs on a base station. 
-It receives and records data from the sensor modules. 
+The programs `SensorRecord` and`SensorRecord_v2` are `python3` code which 
+run on a base station.
+`SensorRecord` uses package `pySX127x` which supports SX127x radios such as
+used on RFM95 sx1276 module boards.
+`SensorRecord_v2` (under development) uses package ``LoRaRF-python` supports SX127x, SX126x,
+and LLCC68 (using SX126x) radios.
+See https://github.com/wke67/LoRaRF-Python
+
+The base station receives and records data from the sensor modules. 
 The current version simply listens on a LoRa channel and records any transmissions received.
 There is no attempt at acknowledgment, filtering for faulty or unexpected transmissions, or encryption.
 This approach is useful for debugging transmitters but does mean the data needs to be 
@@ -19,6 +26,7 @@ The base station could be any computer that runs python3 but it needs a LoRa mod
 receive information. It can be run headless but a monitor is very useful for initial setup.
 (An older project that has similar LoRa requirements is in repository `LoRaGPS`.) 
 
+BELOW NEEDS TO BE REVISED TO REFLECT ALSO `SensorRecord_v2` when it works.
 
 ### Recording software setup
 
